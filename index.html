@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csernelyi Csoda Birtok</title>
+    <meta name="description"
+        content="Fedezze fel birtokunkat, ahol szállás, lovaskocsi, túrák és lovaglási lehetőségek várják. Vásároljon friss, helyi termékeket, mint sajtok, húsok, szörpök. Kényeztesse magát igazi vidéki élményekkel és kapcsolódjon ki nálunk!">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Csernelyi Csoda Birtok</h1>
+            <p>Élmény a természet szívében!</p>
+            <button class="button" onclick="openModal()">Ismerd meg a környéket</button>
+        </header>
+
+        <div id="videoModal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content">
+                <video id="myVideo" width="100%" controls>
+                    <source src="video/videkitaj.mp4" type="video/mp4">
+                    A böngésződ nem támogatja a videók lejátszását.
+                </video>
+            </div>
+        </div>        
+
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Főoldal</a></li>
+                <li class="menu-item">
+                    <a href="szolgaltatasok.html">Szolgáltatások</a>
+                    <ul class="submenu">
+                        <li><a href="szolgaltatasok.html#szallas">Szállás</a></li>
+                        <li><a href="szolgaltatasok.html#tura">Túra</a></li>
+                        <li><a href="szolgaltatasok.html#lovaglas">Lovaglás</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="helyi-termekek.html">Helyi Termékek</a>
+                    <ul class="submenu">
+                        <li><a href="helyi-termekek.html#sajtok">Sajtok</a></li>
+                        <li><a href="helyi-termekek.html#husok">Húsok</a></li>
+                        <li><a href="helyi-termekek.html#szorpok">Szörpök</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="infok.html">Információk</a>
+                    <ul class="submenu">
+                        <li><a href="infok.html#rolunk">Rólunk</a></li>
+                        <li><a href="infok.html#kapcsolat">Kapcsolat</a></li>
+                        <li><a href="infok.html#galeria">Galéria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="bevezetes">
+                <img src="img/ret.jpg" alt="ret">
+            <h2>Üdvözöljük a Csernelyi Csoda Birtokon!</h2>
+            <p>Fedezze fel vidéki paradicsomunkat, ahol a természet szépsége és a helyi kultúra találkozik. Élvezze a
+                szállásaink
+                nyújtotta kényelmet, vegyen részt izgalmas túráinkon, és tapasztalja meg a lovaglás örömét. Kényeztesse
+                magát friss,
+                helyi termékekkel, mint sajtok, húsok és szörpök.</p>
+        </section>
+
+        <section class="szolgaltatasok">
+                <img src="img/haz.jpg" alt="Ház">
+                <h2>Szolgáltatásaink:</h2>
+            <ul>
+                <li>Szállás: Kényelmes és hangulatos szobák várják a pihenni vágyókat.</li>
+                <li>Túrák: Fedezze fel a környék csodáit szervezett túráink során.</li>
+                <li>Lovaglás: Élvezze a lovaglást gyönyörű tájakon, akár kezdő, akár tapasztalt lovas.</li>
+            </ul>
+        </section>
+
+        <section class="helyi-termekek">
+                <img src="img/kecske.jpg" alt="Kecske">
+            <h2>Fedezze fel helyi gazdák friss termékeit! Kínálatunkban megtalálhatóak:</h2>
+            <ul>
+                <li>Sajtok: Kézműves sajtjaink különleges ízekkel várják.</li>
+                <li>Húsok: Friss, helyben készült húsok az ínycsiklandó ételekhez.</li>
+                <li>Szörpök: Természetes, ízletes szörpök, melyek felfrissítik a napját.</li>
+            </ul>
+        </section>
+
+
+        <aside class="right-vendegelmenyek">
+            <h2>Vendégélmények</h2>
+            <div class="testimonial-buttons">
+                <button class="prev-button">&lt; Előző</button>
+                <button class="next-button">Következő &gt;</button>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial active">
+                    <p>Hallgassa meg, mit mondanak a vendégeink! "A Csernelyi Csoda Birtok csodálatos hely a
+                        kikapcsolódásra. A szállás kényelmes volt, a túrák pedig felejthetetlen élményt nyújtottak."</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Csodás élmény volt! A környezet lenyűgöző, és a szolgáltatás páratlan!"</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Mindenkinek ajánlom! A természet közelsége és a kényelem tökéletes kombinációja."</p>
+                </div>
+                <div class="testimonial">
+                    <p>"A szállás nagyon szép és tiszta volt, a személyzet pedig nagyon segítőkész!"</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Csodálatos hely, ahol feltöltődhetsz! A túrák fantasztikusak voltak."</p>
+                </div>
+            </div>
+        </aside>
+
+
+        <aside class="left-kapcsolat">
+            <h2>Kapcsolat</h2>
+            <p>Kérdése van? Ne habozzon kapcsolatba lépni velünk! Látogasson el a Kapcsolat menüpontra, vagy írjon
+                nekünk e-mailt.</p>
+
+            <div class="contact-links">
+                <a href="tel:+123456789" class="contact-item">
+                    <i class="fas fa-phone-alt"></i> Telefon
+                </a>
+                <a href="mailto:info@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> E-mail
+                </a>
+                <a href="https://facebook.com" target="_blank" class="contact-item">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://instagram.com" target="_blank" class="contact-item">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42591.493403477194!2d20.288538799757056!3d48.149415638481806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47407e2be5749169%3A0x400c4290c1e6cf0!2sCsernely%2C%203648!5e0!3m2!1shu!2shu!4v1730533956276!5m2!1shu!2shu"></iframe>
+            </div>
+        </aside>
+
+
+        <footer class="zaro">
+            <div class="footer-content">
+                <h2>Készen áll a kalandra?</h2>
+                <p>Fedezze fel a Csernelyi Csoda Birtokot, ahol a természet és a tradíciók találkoznak!</p>
+                <button id="scrollToTop" class="button">Fedezze fel most!</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script/scroll.js"></script>
+    <script src="script/asidebutton.js"></script>
+    <script src="script/video.js"></script>
+    <script src="script/footerbutton.js"></script>
+
+</body>
+
+</html>

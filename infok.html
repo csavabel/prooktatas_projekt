@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csernelyi Csoda Birtok - Információk</title>
+    <meta name="description"
+        content="Ismerje meg a Csernelyi Csoda Birtok történetét, csapatát és keresse fel galériánkat. Lépjen kapcsolatba velünk további információkért.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Információk</h1>
+        </header>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Főoldal</a></li>
+                <li class="menu-item">
+                    <a href="szolgaltatasok.html">Szolgáltatások</a>
+                    <ul class="submenu">
+                        <li><a href="szolgaltatasok.html#szallas">Szállás</a></li>
+                        <li><a href="szolgaltatasok.html#tura">Túra</a></li>
+                        <li><a href="szolgaltatasok.html#lovaglas">Lovaglás</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="helyi-termekek.html">Helyi Termékek</a>
+                    <ul class="submenu">
+                        <li><a href="helyi-termekek.html#sajtok">Sajtok</a></li>
+                        <li><a href="helyi-termekek.html#husok">Húsok</a></li>
+                        <li><a href="helyi-termekek.html#szorpok">Szörpök</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="infok.html">Információk</a>
+                    <ul class="submenu">
+                        <li><a href="infok.html#rolunk">Rólunk</a></li>
+                        <li><a href="infok.html#kapcsolat">Kapcsolat</a></li>
+                        <li><a href="infok.html#gallery">Galéria</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <aside class="right-form">
+                <div class="button-container">
+                    <button class="tab-button" onclick="showForm('vasarlasForm')">Vásárlás</button>
+                    <button class="tab-button" onclick="showForm('fogalasForm')">Foglalás</button>
+                    <button class="tab-button" onclick="showForm('velemenyForm')">Véleményírás</button>
+                </div>
+
+                <div class="form-container">
+                    <form id="vasarlasForm" class="form hidden">
+                        <h2>Vásárlás</h2>
+                        <p>Rendelje meg kedvenc helyi termékeit online, akár kiszállítással is.</p>
+                        <input type="text" placeholder="Termék neve" required>
+                        <input type="number" placeholder="Mennyiség" required>
+                        <button type="submit">Rendelés leadása</button>
+                    </form>
+
+                    <form id="fogalasForm" class="form hidden">
+                        <h2>Foglalás</h2>
+                        <p>Foglaljon szállást vagy programot előzetesen, hogy biztos helye legyen a kiválasztott
+                            időpontban.
+                        </p>
+                        <input type="text" placeholder="Helyszín" required>
+                        <input type="date" required>
+                        <button type="submit">Foglalás</button>
+                    </form>
+
+                    <form id="velemenyForm" class="form hidden">
+                        <h2>Véleményírás</h2>
+                        <p>Ossza meg véleményét a Csernelyi Csoda birtokról!</p>
+                        <textarea placeholder="Írja le véleményét" required></textarea>
+                        <button type="submit">Küldés</button>
+                    </form>
+                </div>
+            </aside>
+
+            <aside id="rolunk" class="left-rolunk">
+                <h2>Rólunk</h2>
+                <p>Ismerje meg birtokunk történetét és csapatunkat, akik örömmel segítenek Önnek.</p>
+                        <img src="img/anna.jpg" alt="Csapat tagja 1">
+                        <h3>Kiss Anna</h3>
+                        <p>Anna a birtok vezetője, aki szenvedéllyel irányítja a csapatot és az összes programot.</p>
+                        <img src="img/peter.jpg" alt="Csapat tagja 2">
+                        <h3>Nagy Péter</h3>
+                        <p>Péter a farm menedzsere, aki gondoskodik arról, hogy minden termék a legmagasabb minőséget
+                            képviselje.</p>
+                        <img src="img/judit.jpg" alt="Csapat tagja 3">
+                        <h3>Szabó Judit</h3>
+                        <p>Judit a marketing szakértőnk, aki segít a helyi termékek népszerűsítésében és a látogatók
+                            fogadásában.</p>
+            </aside>
+
+            <section id="kapcsolat" class="kapcsolat">
+                <h2>Kapcsolat</h2>
+                <p>Elérhetőségeink:</p>
+                <ul>
+                    <li><strong>Telefonszám:</strong> +36 30 123 4567</li>
+                    <li><strong>E-mail:</strong> info@csernelyicsodabirtok.hu</li>
+                    <li><strong>Cím:</strong> Csernely, Fő utca 1.</li>
+                </ul>
+                    <h3>Megközelítés</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42591.493403477194!2d20.288538799757056!3d48.149415638481806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47407e2be5749169%3A0x400c4290c1e6cf0!2sCsernely%2C%203648!5e0!3m2!1shu!2shu!4v1730533956276!5m2!1shu!2shu"></iframe>
+            </section>
+
+            <section id="gallery" class="gallery">
+                <h2>Galéria</h2>
+                <p>Képek a birtokról, programokról és termékeinkről, hogy bepillantást nyerjen a vidéki életbe.</p>
+                <div class="gallery-display">
+                    <img id="current-image" src="img/csirke.jpg" alt="csirke">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-button" class="prev-button">Előző</button>
+                    <button id="next-button" class="next-button">Következő</button>
+                </div>
+                <div class="gallery-grid">
+                    <img src="img/csirke.jpg" alt="csirke" class="thumbnail" onclick="showImage('img/csirke.jpg')">
+                    <img src="img/haz.jpg" alt="ház" class="thumbnail" onclick="showImage('img/haz.jpg')">
+                    <img src="img/hus.jpg" alt="húsok" class="thumbnail" onclick="showImage('img/hus.jpg')">
+                    <img src="img/kecske.jpg" alt="kecske" class="thumbnail" onclick="showImage('img/kecske.jpg')">
+                    <img src="img/lovaglas.jpg" alt="lovaglás" class="thumbnail"
+                        onclick="showImage('img/lovaglas.jpg')">
+                    <img src="img/paci.jpg" alt="paci" class="thumbnail" onclick="showImage('img/paci.jpg')">
+                    <img src="img/ret.jpg" alt="réti kép" class="thumbnail" onclick="showImage('img/ret.jpg')">
+                    <img src="img/rofi.jpg" alt="róka" class="thumbnail" onclick="showImage('img/rofi.jpg')">
+                    <img src="img/sajt.jpg" alt="sajt" class="thumbnail" onclick="showImage('img/sajt.jpg')">
+                    <img src="img/szallas.jpg" alt="szállás" class="thumbnail" onclick="showImage('img/szallas.jpg')">
+                    <img src="img/szamar.jpg" alt="szamár" class="thumbnail" onclick="showImage('img/szamar.jpg')">
+                    <img src="img/szorp.jpg" alt="szörp" class="thumbnail" onclick="showImage('img/szorp.jpg')">
+                    <img src="img/tanyahaz.jpg" alt="tanyaház" class="thumbnail"
+                        onclick="showImage('img/tanyahaz.jpg')">
+                    <img src="img/tura.jpg" alt="túra" class="thumbnail" onclick="showImage('img/tura.jpg')">
+                    <img src="img/tyukok.jpg" alt="tyúkok" class="thumbnail" onclick="showImage('img/tyukok.jpg')">
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Csernelyi Csoda Birtok. Minden jog fenntartva.</p>
+            </footer>
+
+    </div>
+
+    <script src="script/scroll.js"></script>
+    <script src="script/gallery.js"></script>
+    <script src="script/froms.js"></script>
+
+</body>
+
+</html>
